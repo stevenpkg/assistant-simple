@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  assistant_simple:
+    container_name: assistant_simple
+    hostname: assistant_simple
+    image: assistant-simple-app
+    ports:
+      - 3000:3000
+    environment:
+      - ASSISTANT_ID=a25d5f5c-23ad-42a3-9ae3-d68aa872dd23
+      - ASSISTANT_USERNAME=0e6567c4-e650-451a-9fae-402e877aacdd
+      - ASSISTANT_PASSWORD=HvNMfPzBqsmp
+      - ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
